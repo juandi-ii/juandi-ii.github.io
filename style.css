@@ -1,0 +1,156 @@
+/* Estilo global para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url('base/imagen/ruta.jpg'); /* Imagen de fondo de carretera */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Estilo del contenedor del video */
+#video-container {
+    width: 640px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con opacidad */
+    overflow: hidden;
+}
+
+/* Estilo de las opciones */
+#opciones, #opciones1, #opciones2, #opciones3, #opciones4, #opciones5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* Aumentar el espacio entre los botones */
+    margin-top: 20px;
+    opacity: 0; /* Inicialmente invisibles */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Botones de opciones */
+button {
+    background-color: #4CAF50; /* Verde como color principal */
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Aumentar el tamaño de los botones */
+    font-size: 24px; /* Aumentar el tamaño de la fuente */
+    border-radius: 12px; /* Hacer los bordes más redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Efecto de transición */
+    width: 250px; /* Aumentar el tamaño de los botones */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más grande */
+}
+
+/* Efecto hover para los botones */
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Aumentar el tamaño más al pasar el cursor */
+}
+
+/* Imagen dentro de los botones */
+button img {
+    margin-right: 15px; /* Aumentar el espacio entre la imagen y el texto */
+    width: 50px; /* Aumentar el tamaño de la imagen */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Efecto de transición en la imagen */
+}
+
+/* Efecto hover sobre la imagen */
+button:hover img {
+    transform: rotate(15deg); /* Gira la imagen ligeramente al pasar el cursor */
+}
+
+/* Estilo del cartel de "Chocaste" */
+#choqueMessage {
+    display: none;
+    text-align: center;
+    font-size: 50px; /* Aumentar el tamaño del mensaje */
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
+    animation: shake 0.5s ease-in-out infinite; /* Agrega un efecto de sacudida */
+    z-index: 999; /* Asegurarse de que el cartel esté por encima del video */
+}
+
+/* Animación de sacudida para el mensaje de "Chocaste" */
+@keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(5deg); }
+    50% { transform: translate(-50%, -50%) rotate(-5deg); }
+    75% { transform: translate(-50%, -50%) rotate(5deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+/* Fondo para la pantalla */
+#video-container {
+    background-color: #e0e0e0; /* Color gris claro */
+    border: 5px solid #333;
+    border-radius: 12px; /* Bordes más redondeados */
+}
+
+/* Estilo para la visibilidad de las opciones de tránsito */
+#opciones, #opciones1, #opciones2, #opciones3, #opciones4, #opciones5 {
+    transition: opacity 0.3s ease;
+}
+
+/* Efecto de entrada para las opciones */
+#opciones, #opciones1, #opciones2, #opciones3, #opciones4, #opciones5 {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Animación de aparición de las opciones */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo para las opciones de tránsito */
+#opciones button {
+    background-color: #FFC107; /* Amarillo para resaltar */
+}
+
+/* Estilo para las opciones 3 y 4 */
+#opciones1 button {
+    background-color: #FFC107; /* Azul para opción 'opciones' */
+}
+
+/* Estilo para las opciones 5 y 6 */
+#opciones2 button {
+    background-color: #FFC107; /* Naranja para otras opciones */
+}
+
+/* Estilo para las opciones 7 y 8 */
+#opciones3 button {
+    background-color: #FFC107; /* Púrpura para opciones adicionales */
+}
+
+/* Estilo para las opciones 9 y 10 */
+#opciones4 button {
+    background-color: #FFC107; /* Azul claro para más opciones */
+}
+
+/* Estilo para las opciones 11 y 12 */
+#opciones5 button {
+    background-color: #FFC107; /* Verde claro para opciones finales */
+}
